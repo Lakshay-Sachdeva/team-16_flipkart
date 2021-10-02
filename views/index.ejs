@@ -4,26 +4,206 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products </title>
+    <style>
+      body {
+        background-color:#dfeafd;
+      }
+      #productsmobile{
+        margin-top: 110px;
+        background-color:white;
+        float: left;
+        width: 100%;
+        height: 370px;
+        margin: 4px;
+        display: flex;
+        
+
+      }
+      #productsmobile>img{
+        
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 30px;
+        width: 13%;
+        height: 80%;
+        
+      }
+      #productsmobile>p{
+        margin-top: 50px;
+
+      }
+      
+      button{
+        width: 100px;
+        height: 40px;
+      }
+      *{
+        padding:0px;
+        margin: 0px;
+      }
+      .nav{
+        display: flex;
+        justify-content: space-evenly;
+        background-color:#2874f0;
+        width: 100%;
+        height: 50px;
+       
+        
+      }
+      .nav img {
+        margin-top: 10px ;
+        height : 60%;
+      }
+      #btn{
+        background: none;
+        border: none;
+        font-size: 24px;
+        font-weight:600;
+        color: white;
+      }
+      #search input{
+        height:20px;
+        padding:2.5px;
+        margin: 10px auto ;
+        width: 400px;
+      }
+      #src_btn{
+        background: none;
+        border: none ;
+        color :white ;
+        font-size : 20px;
+        font-weight: 500;
+      }
+      .fistbox{
+
+      margin-top: 15px;
+      width: 300px;
+      height: auto;
+      background-color:white;
+     float: left;
+      margin-top: px;
+      }
+      .secondbox{
+        margin-top: 10px;
+        width: 80%;
+      float: right;
+     
+     }
+     #jbtn{
+       margin-top: 180px;
+      float: right;
+      margin-right: 100px;
+      background-color:#fb641b;
+      padding: 5px 10px;
+      color: white;
+      font-size: 20px;
+      font-family: sans-serif;
+      border:  none;
+      
+
+     }
+     
+
+    </style>
 </head>
 <body>
-    
-        <!-- users is an array -->
-        <% product.forEach(function (user) {%>
+<div class="nav">
+  <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png">
+  <div id=search ><input type="text" placeholder="Search products, brands and more">
+  <button id = src_btn>Search</button></div>
+  <div>
+    <a href = "/signup"><button id=btn>Login</button></a>
+    <a href="/cart"><button id=btn>Cart</button></a>
+  </div>
+</div>
+<div class="fistbox">
+ <h1 class="filter">filters</h1>
+  <div class="brand">
+   <select id="brand" >
+       <option >oppo</option>
+       <option >poco</option>
+       <option >realme</option>
+       <option  >oneplus</option>
+       <option>mi</option>
+       <option>celkon</option>
+       <option  >karbon</option>
+       <option >micromax</option>
+       <option >iphone</option>
+   </select>
+       <select id="price">
+       <option >10000</option>
+       <option >20000</option>
+       <option>30000</option>
+       <option >40000</option>
+       <option>50000</option>
+   </select>
+   <a href="filter.html"><button onclick="submit()">submit</button></a>  
+</select>
+</div>
+<div class="ram">
+<label>Ram :</label><br>
+<input type="checkbox" name="">4 GB<br>
+<input type="checkbox" name="">6 GB<br>
+<input type="checkbox" name="">8 GB<br>
+<input type="checkbox" name="">10 GB<br>
+<input type="checkbox" name="">12 GB<br>
+</div><br>
+<div class="dis">
+<label>Discount :</label><br>
+<input type="checkbox" name="">50% or more<br>
+<input type="checkbox" name="">40% or more<br>
+<input type="checkbox" name="">30% or more<br>
+<input type="checkbox" name="">20% or more<br>
+<input type="checkbox" name="">10% or more<br>
+<input type="checkbox" name="">Below 10%<br><br>
+<label>Availability</label><br>
+</div>
+  </div>
+        <div class="secondbox">
+       <!-- users is an array -->
+        <% product.forEach(function (product) {%>
+         <div id="productsmobile" >
+            <img src=<%=product.image%>>
+            <p> <%= product.brand %><br><br>
+           rating :<%= product.rating %><br><br>
+           rom : <%= product.rom %><br><br>
+           camera details :</details> <%= product.camera %><br><br>
+           battrey : <%= product.battry %><br><br>
+           procesor : <%= product. procesor %><br><br>
+           warrenty : <%= product. warrenty %><br><br></p>
+          <p id="right">price  <%= product.price %></p> 
+         
             
-          <p> <%= user.brand %></p>
-            <img src=<%=user.iage%>>
-            <p><%= user.rating %></p>
-            <p><%= user.rom %></p>
-            <p><%= user.rating %></p>
-            <p><%= user.camera %></p>
-            <p><%= user.battrey %></p>
-            <p><%= user.price %></p>
+          <form action="/cart" method="post">
+            <input type="hidden"  name="brand" value=<%= product.brand %>>
+            <input type="hidden"  name="image" value=<%=product.image%>>
+            <input type="hidden" name="rating" value=<%= product.rating %>>
+            <input type="hidden" name="rom" value=<%= product.rom %>>
+            <input type="hidden" name="camera" value=<%= product.camera %>>
+            <input type="hidden" name="battry" value=<%= product.battry %>>
+            <input type="hidden" name="procesor" value=<%= product. procesor %>>
+            <input type="hidden" name="warrenty" value=<%= product. warrenty %>>
+            <input type="hidden" name="price" value=<%= product. price %>>
+            <div id="cart_id"><input  id="jbtn" type="submit" value="Add to cart" ></div>
+           </form>
+        
+          </div>
           
-            <!-- users/614dbc3d1d67f9f3ecb3153b -->
         <% }) %>
         
         
-    
+      </div>
 </body>
+
+<script type = "module">
+  import header from "./header.js"
+  document.body.prepend(header)
+
+</script>
+
+
+
+
+
 </html>
