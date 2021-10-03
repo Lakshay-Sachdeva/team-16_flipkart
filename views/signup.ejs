@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
     <style>
         * {
             margin: 0px;
@@ -87,6 +88,26 @@
 
         #footer {
             grid-area: footer;
+            display: grid;
+            grid-template-columns: 50% 20% 30%;
+            grid-template-rows: 1fr;
+            grid-template-areas: 'f1 f2 f3';
+            color: rgb(51, 53, 53);
+        }
+        #f1{
+            text-align: center;
+            grid-area: f1;
+
+        }
+        #f2{
+            grid-area: f2;
+        }
+        #f3{
+            grid-area: f3;
+        }
+        #f3 span{
+            grid-area: f3;
+            color: rgb(37, 37, 228);
         }
 
         /* body code ends here */
@@ -203,7 +224,11 @@
             <div id="s2"> Safe and Secure Payments. Easy returns. 100% Authentic products.</div><br>
             <div><i class="fa fa-truck" aria-hidden="true"></i></div>
         </div>
-        <div id="footer"><i class="fas fa-truck"></i></div>
+        <div id="footer">
+            <div id="f1">Policies: Returns Policy | Terms of use | Security | Privacy | Infringement</div>
+            <div id="f2"> @2007-2021</div>
+            <div id="f3">Need help? visit the <span>Help Center</span> or <span>Contact us</span> Flipkart.com</div>
+        </div>
     </div>
 </body>
 
