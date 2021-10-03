@@ -21,17 +21,18 @@ app.set('view engine', 'ejs');
 
 const product=require("./crud_controls/crudproducts")
 
-
+const pay=require("./crud_controls/crudpayment")
 const User=require("./crud_controls/sinupcrud")
-
+const details=require("./crud_controls/del")
 const login=require("./crud_controls/logincrud")
 const crudcart=require("./crud_controls/crudcart")
 app.use("/products",product)
 app.use("/cart",crudcart)
 app.use("",User)
 app.use("",login)
+app.use("/delivery",details)
 
-
+app.use("/payment",pay)
 
 
 

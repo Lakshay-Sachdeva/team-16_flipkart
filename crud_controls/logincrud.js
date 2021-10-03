@@ -14,7 +14,7 @@ router.post("/login",async(req,res)=>{
    const product= await Product.find({})
    //console.log(data)
     if(pass===data.password){
-res.render("index",{product:product})
+res.render("delary",{product:product})
  //console.log("a")
     }   
     else{

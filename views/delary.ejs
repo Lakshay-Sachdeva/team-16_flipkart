@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        * {
+            margin: 0px;
+            background-color: #e8eaec;
+            font-family: Roboto, Arial, sans-serif;
+        }
+
+        #header {
+            height: 50px;
+            color: whitesmoke;
+            font-weight: 1000;
+            font-size: 30px;
+            background: #2874f0;
+            padding: 10px 50px;
+        }
+
+        #main {
+            display: grid;
+            height: 600px;
+            grid-gap: 0.2ch;
+            grid-template-columns: 70% 28%;
+            padding: 2%;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "d2 d5""d1 d5""d4 d5";
+        }
+
+
+        #submain_div_1 {
+            grid-area: d1;
+            height: 350px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 15% 80%;
+            grid-template-areas: "div_head div_head""submain_div_1_body info_div_1";
+        }
+
+
+
+        .submain_div_1_body>input,
+        p {
+            width: 85%;
+            border: none;
+            padding: 1px 20px;
+            margin: 10px;
+            height: 44px;
+            border: #a5a1a1 0.1px solid;
+        }
+
+        button {
+            width: 90%;
+            border: none;
+            padding: 10px 20px;
+            background-color: #FB641B;
+            cursor: pointer;
+            height: 50px;
+            margin: 20px 20px 5px;
+            text-align: center;
+
+        }
+
+        .submain_div_1_body {
+            grid-area: submain_div_1_body;
+        }
+
+        #info_submain_div_1 {
+            padding: 10px;
+
+        }
+
+        #info_submain_div_1 input,
+        select {
+            margin: 2px 10px 19px;
+            height: 44px;
+            width: 80%;
+            border: #a5a1a1 0.1px solid;
+
+        }
+
+
+        #submain_div_2 {
+            grid-area: d2;
+        }
+
+        #submain_div_3 {
+            grid-area: d3;
+        }
+
+        #submain_div_4 {
+            grid-area: d4;
+        }
+
+        #submain_div_5 {
+            grid-area: d5;
+        }
+
+        .div_head {
+            padding: 20px;
+            grid-area: div_head;
+        }
+
+        .div_head_1 {
+            color: #fff;
+            background-color: #2874f0;
+        }
+
+        #submain_div_2,
+        #submain_div_3,
+        #submain_div_4 {
+            color: #796e6e;
+            padding: 14px 24px;
+            background-color: rgb(221, 220, 220);
+            font-size: 16px;
+        }
+
+        .div_head>span {
+            background: #fff;
+            color: #2874f0;
+            padding: 2px 5px;
+            border-radius: 20%;
+            margin: 1% 10px;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            grid-template-rows: 1fr;
+            grid-template-areas: "f1 f2 f3";
+        }
+
+        #f1,
+        #f2,
+        #f3 {
+            color: rgb(128, 126, 126);
+            font-size: 12px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        #f3 span {
+            color: blue;
+        }
+
+        #tick img {
+            height: 30px;
+            margin: 0px -10px -10px;
+            padding: 0px;
+        }
+
+        header{
+            display: grid;
+            height: 80px;
+           
+            grid-template-columns: 15% 10% 75%;
+            grid-template-rows:1fr;
+            grid-template-areas: "h1 h2 h3";
+            width: 100%;
+        }
+        #head_div_1{
+            grid-area: h1;
+            background-color: #2874f0;
+        }
+        #head_div_2{
+            grid-area: h2;
+            background-color: #2874f0;
+        }
+        #head_div_3{
+            grid-area: h3;
+            background-color: #2874f0;
+        }
+        header img {
+            width: 100px;
+            margin-top: 15%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="head_div_1"></div>
+        <div id="head_div_2"><img src="images-lakshay/flipkart-head.jpg" alt="" onclick="img()"></div>
+        <div id="head_div_3"></div>
+    </header>
+    <div id="main">
+        <div id="submain_div_1">
+            <div class="div_head div_head_1"> <span>2</span>Delivery Address</div>
+            <div class="submain_div_1_body">
+                <input type="mobie" class="form-control" name="" id="mobie" placeholder="10-digit mobie number"
+                    required>
+                <br>
+                <input type="text" class="form-control" name="" id="pass" placeholder="Address(Area and Street)"
+                    required>
+                <br>
+              <form action="/payment"><input type="submit" name=" SAVE AND DELIVER HERE"></form>
+            </div>
+            <div id="info_submain_div_1">
+                <input type="text" class="form-control" name="" id="pincode" placeholder="Pincode" required>
+                <br>
+                <select name="cars" id="states">
+                    <option value="MH"> ____Select State ____</option>
+                    <option value="MH">Andhra Pradesh</option>
+                    <option value="saab">Arunachal Pradesh</option>
+                    <option value="mercedes">Assam</option>
+                    <option value="audi">Bihar</option>
+                    <option value="MH">Chhattisgarh</option>
+                    <option value="saab">Goa</option>
+                    <option value="mercedes">Gujarat</option>
+                    <option value="audi">Haryana</option>
+                    <option value="MH">Andhra Pradesh</option>
+                    <option value="saab">Jharkhand</option>
+                    <option value="mercedes">Karnataka</option>
+                    <option value="audi">Kerala</option>
+                    <option value="MH">Madhya Pradesh</option>
+                    <option value="saab">Maharashtra</option>
+                    <option value="mercedes">Manipur</option>
+                    <option value="audi">Meghalaya</option>
+                    </option>
+                    <option value="saab">Mizoram</option>
+                    <option value="mercedes">Nagaland</option>
+                    <option value="audi">Odisha</option>
+                    <option value="MH">Punjab</option>
+                    <option value="saab">Rajasthan</option>
+                    <option value="mercedes">Sikkim</option>
+                    <option value="audi">Tamil Nadu</option>
+                    <option value="audi">Telangana</option>
+                    <option value="MH">Tripura</option>
+                    <option value="saab">Uttar Pradesh</option>
+                    <option value="mercedes">Uttarakhand</option>
+                    <option value="audi">West Bengal</option>
+                </select>
+            </div>
+
+        </div>
+        <div id="submain_div_2">
+            <div class="div_head"> <span>1</span>LOGIN OR SIGNUP<span id="tick"><img
+                        src="https://t4.ftcdn.net/jpg/02/23/98/51/240_F_223985198_6MRkrjq8ldwltNpyQYbqRUN1u0ndZ5IV.jpg"
+                        alt=""></span></div>
+        </div>
+        <div id="submain_div_3">
+            <div class="div_head"> <span>3</span>Order Summary</div>
+        </div>
+        <div id="submain_div_4">
+            <div class="div_head"> <span>3</span>Payment Options</div>
+        </div>
+        <div id="submain_div_5">
+            <div>
+                <img src="#" alt="">
+                <div>Safe and Secure Payments. Easy returns. 100% Authentic products.</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="f1">
+            <span>Policies: </span>
+            <span>Returns Policy </span>
+            <span>| Terms of use </span>
+            <span>| Security </span>
+            <span>| Privacy </span>
+            <span>| Infringement </span>
+        </div>
+        <div id="f2">© 2007-2021 Flipkart.com</div>
+        <div id="f3">Need help? Visit the <span>Help Center</span> or <span>Contact Us</span> </div>
+    </footer>
+
+    <script>
+            
+        function saveAddress() {
+
+            var mobile = document.getElementById('mobie').value;
+            var pincode = document.getElementById('pincode').value;
+            var address = document.getElementById('pass').value;
+
+            var states = document.getElementById('states').value;
+
+            localStorage.setItem("mobile1", mobile);
+            localStorage.setItem("pincode1", pincode)
+            localStorage.setItem("address1", address)
+            localStorage.setItem("states1", states)
+
+
+            if(mobile != null & pincode != null != address!=null){
+                window.location.href = "payment.html"
+            }
+            
+        }
+
+    </script>
+
+</body>
+
+</html>
