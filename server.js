@@ -19,9 +19,8 @@ app.set('view engine', 'ejs');
 
 
 
- const product=require("./crud_controls/crudproducts")
+const product=require("./crud_controls/crudproducts")
 
- const home=require("./crud_controls/crudhome")
 
 const User=require("./crud_controls/sinupcrud")
 
@@ -31,7 +30,6 @@ app.use("/products",product)
 app.use("/cart",crudcart)
 app.use("",User)
 app.use("",login)
-app.use("/home",home)
 
 
 
