@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobile, Electronics, Furniture, Grocery, Lifestyle, Books $ More. Best Offers!</title>
+    <link rel="icon" href="images-lakshay/flipkart-logo.png" type="image/x-icon" />
+    <style>
+        #navigation{
+            display: flex;
+            margin-top: 70px;
+            text-align: center;
+        }
+        #navigation img {
+            width: 80px;
+        }
+        .rows{
+            display:flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .rows >p{
+            font-size: 22px;
+        }
+        .rows > figure > img {
+            width: 100px;
+            height : 150px;
+        }
+        .rows button {
+            height: 50px;
+            width: 100px;
+            color: white;
+            background-color: #1976D2;
+            font-size: 20px;
+        }
+        .rows > figure > figcaption{
+            margin-top: 5px;
+            font-size: 18px;
+        }
+        hr{
+            color: #616161;
+        }
+        a{
+            color: black ;
+        }
+        #courosel{
+            width: 100%;
+            height: 400px;
+        }
+        .nav{
+        display: flex;
+        justify-content: space-evenly;
+        background-color:#2874f0;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0; 
+      }
+      .nav img {
+        margin-top: 10px ;
+        height : 60%;
+      }
+      #search input{
+        height:20px;
+        padding:2.5px;
+        margin: 10px auto ;
+        width: 400px;
+      }
+      #src_btn{
+        background: none;
+        border: none ;
+        color :white ;
+        font-size : 20px;
+        font-weight: 500;
+      }
+      #btn{
+          margin: 10px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        font-weight:600;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="nav">
+            <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png">
+            <div id=search ><input type="text" placeholder="Search products, brands and more">
+            <button id = src_btn>Search</button></div>
+            <div>
+              <a href = "http://localhost:2233/signup"><button id=btn>Login</button></a>
+              <a href="http://localhost:2233/cart"><button id=btn>Cart</button></a>
+            </div>
+          </div>
+        <div id="navigation">
+            <figure>
+                <img src = "images-lakshay/top_offers.png" />
+                <figcaption>Top Offers</figcaption>
+            </figure>
+            <figure>
+                <img src = "images-lakshay/grocery.png" />
+                <figcaption>Grocery</figcaption>
+            </figure>
+            <a href="http://localhost:2233/products" >
+                <figure>
+                    <img src = "images-lakshay/mobiles.png" />
+                    <figcaption>Mobiles</figcaption>
+                </figure>
+            </a>
+            <figure>
+                <img src = "images-lakshay/fashion.png" />
+                <figcaption>Fashion</figcaption>
+            </figure>
+            <figure>
+                <img src = "images-lakshay/electronics.png" />
+                <figcaption>Electronics</figcaption>
+            </figure>
+            <figure>
+                <img src = "images-lakshay/home.jpg" />
+                <figcaption>Home</figcaption>
+            </figure>
+            <figure>
+                <img src = "images-lakshay/appliances.png" />
+                <figcaption>Appliances</figcaption>
+            </figure>
+            <figure>
+                <img src = "images-lakshay/travel.png" />
+                <figcaption>Travel</figcaption>
+            </figure>
+            <figure>
+                <img src = "images-lakshay/beauty_toys.png" />
+                <figcaption>Beauty, Toys & More</figcaption>
+            </figure>
+        </div>
+        <hr/>
+        <div id = "courosel"></div>
+        <hr/>
+        <div id="deals_of_day">
+            <div class="rows">                  
+                <p>Deal of the Day</p>
+                <button>View All</button>
+            </div>
+            <div id = "day_deals" class="rows">
+                <figure>
+                    <img src="images-lakshay/dod1.jpeg"/>
+                    <figcaption>Bedsheets</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/dod2.jpg"/>
+                    <figcaption>Top Selling Men's Accessories</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/dod3.jpeg"/>
+                    <figcaption>Electric Appliances</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/dod4.jpeg"/>
+                    <figcaption>Shoe Racks & more</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/dod5.jpg"/>
+                    <figcaption>Sports & Fitness</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/dod6.jpeg"/>
+                    <figcaption>Electrical Hardware</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/dod7.jpg"/>
+                    <figcaption>Perfumes & deos</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/dod8.jpeg"/>
+                    <figcaption>Necklaces & Earings</figcaption>
+                </figure>
+            </div>
+        </div>
+        <hr/>
+        <div id="footwear_men">
+            <div id="footwear_men_head" class="rows">
+                <p>Men's Footwear</p>
+                <button>View All</button>
+            </div>
+            <div  class="rows">
+                <figure>
+                    <img src="images-lakshay/fm1.jpeg"/>
+                    <figcaption>Puma, Fila & more</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/fm2.jpeg"/>
+                    <figcaption>Best Selling Footwear</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/fm3.jpeg"/>
+                    <figcaption>Sparx, Bata & more</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/fm4.jpeg"/>
+                    <figcaption>Nike, New Balance</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/fm5.jpeg"/>
+                    <figcaption>Sparx, Paragon, Khadim's</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/fm6.jpeg"/>
+                    <figcaption>Ducati</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/fm7.jpeg"/>
+                    <figcaption>Campus, Yonex & more</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/fm8.jpeg"/>
+                    <figcaption>Nike, Skechers</figcaption>
+                </figure>
+            </div>
+        </div>
+        <hr/>
+        <div id="furniture">
+            <div id="furniture_head" class="rows">
+                <p>Futniture Bestsellers</p>
+                <button>View All</button>
+            </div>
+            <div class="rows">
+                <figure>
+                    <img src="images-lakshay/f1.jpeg"/>
+                    <figcaption>Hammock and Swings</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/f2.jpeg"/>
+                    <figcaption>Inflatable Sofas</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/f3.jpeg"/>
+                    <figcaption>Office and Study Chairs</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/f4.jpeg"/>
+                    <figcaption>Office and Study Tables</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/f5.jpeg"/>
+                    <figcaption>Wardrobes</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/f6.jpeg"/>
+                    <figcaption>TV Units</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/f7.jpeg"/>
+                    <figcaption>Sofa Sets</figcaption>
+                </figure>
+                <figure>
+                    <img src="images-lakshay/f8.jpeg"/>
+                    <figcaption>Hammock and Swings</figcaption>
+                </figure>
+            </div>
+        </div>
+        <hr/>
+    </main>
+    <footer></footer>
+
+    <script>
+        let cour = document.getElementById("courosel")          ///images-lakshay/courosel_1.jpg
+        var i = 0 ;
+        let slido = [ "images-lakshay/courosel_1.jpg" , "images-lakshay/courosel2.jpg" , "images-lakshay/courosel3.jpeg" , "images-lakshay/courosel4.jpeg" , "images-lakshay/courosel5.jpeg" , "images-lakshay/courosel6.jpeg"]
+        var image = document.createElement('img') ;
+        image.style.width = "100%" ;
+        image.style.height = "100%" ;
+        var slider = setInterval(function slider() {
+            if(i == 6){
+                i = 0 ;
+            }            
+            image.src = slido[i] ;   
+            cour.append(image) ;
+            i++
+        }, 4000); 
+    </script>
+</body>
+</html>

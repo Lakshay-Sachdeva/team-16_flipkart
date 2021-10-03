@@ -48,8 +48,6 @@
         background-color:#2874f0;
         width: 100%;
         height: 50px;
-       
-        
       }
       .nav img {
         margin-top: 10px ;
@@ -76,19 +74,17 @@
         font-weight: 500;
       }
       .fistbox{
-
-      margin-top: 15px;
-      width: 300px;
-      height: auto;
-      background-color:white;
-     float: left;
-      margin-top: px;
+        margin-top: 15px;
+        padding: 10px;
+        width: 280px;
+        height: 800px;
+        background-color:white;
+        float: left;
       }
       .secondbox{
         margin-top: 10px;
         width: 80%;
-      float: right;
-     
+        float: right;     
      }
      #jbtn{
        margin-top: 180px;
@@ -100,11 +96,13 @@
       font-size: 20px;
       font-family: sans-serif;
       border:  none;
-      
-
      }
-     
-
+     .clr{
+        background: none;
+        border: none;
+        font-size: 22px;
+        color: black
+     }
     </style>
 </head>
 <body>
@@ -118,7 +116,7 @@
   </div>
 </div>
 <div class="fistbox">
- <h1 class="filter">filters</h1>
+ <h1 class="filter">Filter</h1>
   <div class="brand">
    <select id="brand" >
        <option >oppo</option>
@@ -138,7 +136,7 @@
        <option >40000</option>
        <option>50000</option>
    </select>
-   <a href="filter.html"><button onclick="submit()">submit</button></a>  
+   <a href="filter.html"><button onclick="submit()" class="clr">Submit</button></a>  
 </select>
 </div>
 <div class="ram">
