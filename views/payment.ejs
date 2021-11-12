@@ -7,20 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <style>
-        * {
-            margin: 0px;
-            background-color: #e8eaec;
-            font-family: Roboto, Arial, sans-serif;
-        }
+       
 
-        #header {
-            height: 50px;
-            color: whitesmoke;
-            font-weight: 1000;
-            font-size: 30px;
-            background: #2874f0;
-            padding: 10px 50px;
-        }
+     
 
         #main {
             display: grid;
@@ -51,7 +40,7 @@
             padding: 1px 20px;
             margin: 10px;
             height: 44px;
-            border: #a5a1a1 0.1px solid;
+           
         }
 
         button {
@@ -77,7 +66,7 @@
             margin: 2px 10px 19px;
             height: 44px;
             width: 80%;
-            border: #a5a1a1 0.1px solid;
+         
 
         }
 
@@ -104,12 +93,12 @@
         }
         .div_head_1{
             color: #fff;
-            background-color: #2874f0;
+            background-color: rgb(231, 200, 156);
         }
         #submain_div_2 ,#submain_div_3, #submain_div_4 {
             color: #796e6e;
             padding: 14px 24px;
-            background-color: rgb(221, 220, 220);
+            background-color:white;
             font-size: 16px;
         }
 
@@ -127,56 +116,199 @@
             grid-template-areas:"f1 f2 f3";
         }
         #f1, #f2, #f3{
-            color: rgb(128, 126, 126);
+            color: rgb(231, 200, 156);
             font-size: 12px;
             text-align: center;
             margin: 10px;
         }
-        #f3 span{
-            color:blue;
-        }
+      
 
-        #tick img {
-        height: 30px;
-        margin: 0px -10px -10px;
-        padding: 0px;
+  
+        #fistbox{
+        width: 58%;
+        height: 60px;
+        background-color:rgb(231, 200, 156);
+        font-size: 15px;
+        float: left;
+        justify-content: center;
     }
+    #fistbox p{
+    margin-left:8%;
+    }
+     img{
+        width: 40%;
+        height: 60px;
+        
+        margin-right: 2%;
+        float: right;
+    
+    }
+    #secondbox{
+        clear: both;
+        float: left;
+        display: flex;
+    
+    
+    }
+    #secondbox img{
+    margin-left: 0px;
+    margin-top: 30px;
+    width: 40%;
+    height: 50%;
+    
+    
+    }
+    #search{
+        margin-left: 10px;
+        width:200%;
+        height: 30px;
+        margin-top: 30px;
+        border-radius: 50px;
+        clear: both;
+    }
+    
+    #navbar{
+        background-color: black;
+        
+        width: 100%;
+        height: 50px;
+        clear: both;
+        margin-top: 20px;
+        display: flex;
+        color: white;
+       
+    }
+    #navbar p{
+        margin-left: 80px;
+    }
+    #navbar a{
+        color: white;
+        text-decoration: none;
+    }
+    #margin{
+        clear: both;
+        
+        width: 100%;
+        height: 10px;
+    }
+    #thirdbox{
+        
+        width: 80%;
+        height: 100px;
+        display: flex;
+        margin-left: 80px;
+    }
+    #thirdbox img{
+        margin-left: 100px;
+        width: 100%;
+        height: 500px;
+        display: flex;
+    }
+    #footer{
+           width: 100%;
+           margin-top: 10px;
+           background-color: black;
+           height: 900px;
+           display:block;
+         }
+         #f{
+          display: flex;
+          float: left;
+        }
 
-    header{
-            display: grid;
-            height: 80px;
-           
-            grid-template-columns: 15% 10% 75%;
-            grid-template-rows:1fr;
-            grid-template-areas: "h1 h2 h3";
-            width: 100%;
+        #ft1{
+          margin-top: 10px;
+       
+          clear: both;
+          float: left;
+          color: white;
+          line-height: -0px;
+          margin-left: 10px;
+          display: flex;
+          
         }
-        #head_div_1{
-            grid-area: h1;
-            background-color: #2874f0;
+        #ft1 img{
+          margin-left: 150px;
+          width:10%;
+          margin-right: 15px;
+          height: 30px;
+          margin-top: 15px;
         }
-        #head_div_2{
-            grid-area: h2;
-            background-color: #2874f0;
+        #ft1r{
+          float: right;
         }
-        #head_div_3{
-            grid-area: h3;
-            background-color: #2874f0;
+       
+        #line{
+          height: 0.12px;
+          width: 78%;
+          background-color: rgb(235, 217, 217);
+          display: block;
+          float: left;
+          margin-left: 10%;
+          margin-top: 50px;
         }
-        header img {
-            width: 100px;
-            margin-top: 15%;
-            
+        #about{
+          display: block;
+          color: white;
+          display: block;
+         float: left;
+         margin-left: 100px;
+         margin-top: 40px;
+        }
+        #footerb {
+          float: right;
+          margin-right: 100px;
+          margin-top: 10px;
+          display: flex;
+          color:wheat;
+
+
+        }
+        #footerb img{
+          width: 50px;
+          height: 50px;
+          display: flex;
+          margin: 30px;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <div id="head_div_1"></div>
-        <div id="head_div_2"><img src="images-lakshay/flipkart-head.jpg" alt="" onclick="img()"></div>
-        <div id="head_div_3"></div>
-    </header>
+    <div>
+        <div id="fistbox">
+         <p>Get 4x points on foundation with code 4XPOINTS.* Plus, free shipping with code FREESHIP</p>
+        
+        </div>
+        
+       <img src="https://www.sephora.com/contentimages/homepage/101221/Homepage/DesktopMweb/2021-10-25-hp-persistent-banner-foundation-mbc-4x-points-us-ca-desktop-slice.jpeg?imwidth=612">
+     </div>
+     <div>
+     <div id="secondbox">
+       <div>
+       <a href="home"><img src="https://www.sephora.com/img/ufe/logo.svg"></a>
+       
+     </div>
+     <div id="sec"><input type="text" id="search" >
+     
+      
+     </div>
+     
+       </div>
+       </div>
+       <div id="margin"></div>
+       <div id="navbar">
+        <a> <p>New</p></a>
+         <a><p>Back ground</p></a>
+         <a href="/makeup"><p>Makeup</p></a>
+         <a href="makeup.html"><p>Skincare</p></a>
+         <a><p>Hair</p></a>
+         <a><p>Tools&Brushes</p></a>
+       <a> <p>Bath&body</p></a>
+       <a><p>Mini size</p></a>
+       <a> <p>Gifts</p></a>
+       <a href="/cart"><p>Cart</p></a>
+       </div>
+       
     <div id="main">
         <div id="submain_div_1">
             <div class="div_head div_head_1"> <span>3</span>PAYMENT OPTION</div>
@@ -197,34 +329,15 @@
             </div>
 
         </div>
-        <div id="submain_div_2"><div class="div_head"> <span>1</span>LOGIN OR SIGNUP<span id="tick"><img
-            src="https://t4.ftcdn.net/jpg/02/23/98/51/240_F_223985198_6MRkrjq8ldwltNpyQYbqRUN1u0ndZ5IV.jpg"
-            alt=""></span></div></div>
-        <div id="submain_div_3"><div class="div_head"><span>2</span>DELIVERY ADDRESS<span id="tick"><img
-            src="https://t4.ftcdn.net/jpg/02/23/98/51/240_F_223985198_6MRkrjq8ldwltNpyQYbqRUN1u0ndZ5IV.jpg"
-            alt=""></span></div></div>
-        <div id="submain_div_4"><div class="div_head"><span>3</span>ORDER SUMMARY<span id="tick"><img
-            src="https://t4.ftcdn.net/jpg/02/23/98/51/240_F_223985198_6MRkrjq8ldwltNpyQYbqRUN1u0ndZ5IV.jpg"
-            alt=""></span></div></div>
-        <div id="submain_div_5">
-            <div>
-                <img src="#" alt=""><div>Safe and Secure Payments. Easy returns. 100% Authentic products.</div>
+        <div id="submain_div_2"><div class="div_head"> <span>1</span>LOGIN OR SIGNUP<span id="tick"></div></div>
+        <div id="submain_div_3"><div class="div_head"><span>2</span>DELIVERY ADDRESS<span id="tick"></div></div>
+       
+       
+                
             </div>
         </div>
     </div>
-    <foote>
-        <div id="f1">
-            <span>Policies: </span>
-            <span>Returns Policy </span>
-            <span>| Terms of use </span>
-            <span>| Security </span>
-            <span>| Privacy </span>
-            <span>| Infringement </span>
-        </div>
-        <div id="f2">© 2007-2021 Flipkart.com</div>
-        <div id="f3" >Need help? Visit the <span>Help Center</span> or <span>Contact Us</span> </div>
-    </foote>
-
+ 
 <script>
         
     function saveAddress(){
@@ -234,6 +347,85 @@
         }
 
 </script>
+<footer id="footer">
+    <div id="f">
+  <div id="ft1">
+    <img src="https://www.sephora.com/img/ufe/icons/find-store.svg">
+    <div id="ft1r"><h5>Find a store</h5>
+      <p4>chose your store</p4></div>
+  </div>
+  <div id="ft1">
+    <img src="https://www.sephora.com/img/ufe/icons/call.svg">
+    <div id="ft1r"><h5>jaswanth</h5>
+      <p4>7306711116</p4></div>
+  </div>
+  
+  <div id="ft1">
+    <img src="https://www.sephora.com/img/ufe/icons/app.svg">
+    <div id="ft1r"><h5>Get the app</h5>
+      <p4>call to 43</p4></div>
+  </div>
+  <div id="ft1">
+    <img src="https://www.sephora.com/img/ufe/icons/cc-outline-ko.svg">
+    <div id="ft1r"><h5>Credit card </h5>
+      <p4>15% Off</p4></div>
+  </div>
+  </div>
+  <div id="line"></div>
+  <div id="about"><h4>About Sephora</h4>
+  <p>About Sephora</p>
+  <p>Carers</p>
+  <p>Newsroom</p>
+  <p>Sephora Socal impact</p>
+  <p>Affliates</p>
+  <p>Sephora Events</p>
+  <p>Gift Cards</p>
+  <p>Sephora Gobal Site</p>
+  <p>Diversite And Inclusion</p>
+  <p>Check Out In Instragram</p>
+  <p>Sephora Accelatate</p>
+  <p>Report  Vulnerablity</p></div>
+  <div id="about"><h4> Sephora</h4>
+    <p>Beuaty inside</p>
+    <p>Sephora Credit card</p>
+    <p>Community Profile</p>
+    <p>Purchase History</p>
+    <p>Account Detils</p>
+    <p>Bueaty Advise</p>
+    <p>Bueaty Offer</p>
+    <p>Quizzes & Buying</p>
+    <p>Reward Bazzer</p>
+    <p>Lovers</p>
+    <p>Book  Reservation</p>
+    </div>
+    <div id="about"><h4> Help</h4>
+      <p>Custmor Service</p>
+      <p>reetun and exchange</p>
+      <p>Delivery options</p>
+      <p>Shipping</p>
+      <p>Billing</p>
+      <p>International shippment</p>
+      <p>Bueaty Service FAC</p>
+      <p>Quizzes & Buying</p>
+      <p>sephora at kohi'l</p>
+      <p>online order</p>
+      <p>kalma</p>
+      </div>
+      <div id="about">
+        <h4> REGION & LANGUAGE</h4>
+        <p>United state - eng</p>
+        <p>canada -eng</p>
+        
+        </div>
+        <div id="line"></div>
+        <div id="footerb">
+  <img src="https://www.sephora.com/img/ufe/icons/instagram-ko.svg">
+  <img src="https://www.sephora.com/img/ufe/icons/facebook-ko.svg">
+  <img src="https://www.sephora.com/img/ufe/icons/twitter-ko.svg">
+  <img src="https://www.sephora.com/img/ufe/icons/youtube-ko.svg">
+        </div>
+        
+  </footer>
 
 </body>
 

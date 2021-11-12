@@ -157,181 +157,39 @@
     #select{
         
         font-size: 15px;
-        background-color: rgb(228, 135, 135);
-    }
-    
-  
-  
-    #fi{
-        margin-top: 50px;
-        line-height: 1px;
-    }
-    #total{
-        float: right;
-        margin-right: 50px;
-        position: sticky;
-    }
-    
-    #basket{
-        float: left;
-        margin-left: 20%;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    #baskbox{
-        width: 40%;
-        height: 20%;
-        margin-left: 18%;
-        background-color:white;
-        float: left;
-        line-height: 1px;
-        display: block;
-        border: 1px solid black;
-   
-    }
-    #baskbox h5{
-        margin-left: 20px;
-    }
-
-    #baskbox img{
-        width: 30px;
-        clear: both;
-        float: left;
-        line-height: 1px;
-        margin-top: -22px;
-        margin-left: 5px;
-    }
-    #baskbox p{
-        float:left;
-        font-size: 14px;
-        margin-right: 30px;
-        margin-top: 2px;
-        margin-left: 5px;
-    }
-    #show{
-        
-        border: 1px solid black;
-        float:right;
-        margin-top: -40px;
-        margin-right: 10px;
-        border-radius: 50px;
-       
-    }
-    #show h5{
-        margin-right: 20px;  
-        
-    }
-    #secbox{
-        width: 40%;
-        height: auto;
-        margin-left: 18%;
-        margin-top:2%;
-       
-        background-color:rgb(240, 231, 231);
-        float: left;
-        line-height: 1px;
-        display: block;
-        border: 1px solid black;
-    }
-    #productsmobile{
-        width: 50%;
-        height: 150%;
-        margin-top: 20px;
-       margin-left: 25px;
-       margin-bottom: 10px;
-       display: flex;
         background-color: white;
+    }
+     #sixbox{
+        background-color: white;
+        width: 76%;
+        height: auto; 
         
+        display: grid;
+        grid-template-columns: 22%22% 22% 22%;
+        grid-template-rows:auto;
+        grid-gap: 50px;
+        grid-column-end: span 3;
+        
+        
+        
+        
+    } 
+    #productsmobile{
+        width: 80%;
+        height: auto;
+        background-color:white;
+
     }
     #productsmobile img{
-        margin-top: 20px;
-    }
-
-    #sixbox{
-        background-color:white;
-        width: 90%;
-        margin-left: 25px;
-    }
-    #rightbox{
-        width: 25%;
-        background-color: white;
-        height: auto;
-        float: right;
-        margin-right: 14%;
-        margin-top: 27px;
-         display: flex;
-         border: 1px solid black;
-    }
-    #rightbox1{
-        margin-left: 20px;
-        background-color: white;
         float: left;
-        font-size: 14px;
-        
-    }
-    #rightbox2{
-        background-color: white;
-        clear: both;
-        float:right;
-        margin-left: 140px;
-       font-size: 15px;
-       font-weight: bold; 
-    }
-   #rightbox3{
-    width: 25%;
-        background-color: white;
-        height: 500px;
-        float: right;
-        margin-right: 14%;
-        margin-top: 2px;
-        
-         border: 1px solid black;
-   }
-   #rightbox3 a{
-       width: 400px;
-       
-       margin-top: 2px;
-   }
-   input{
-       width: 200px;
-       height: 35px;
-       margin-top: 10px;
-       margin-left: 60px;
-   }
-   label{
-    
-       margin-left: 120px;
-   }
-  
-   #check{
-    width: 80%;
-    margin-top: 10px;
-    background-color: red; 
-    height: 10%;
-    margin-left: 10%;
-    border-radius: 25px
-          
-   }
-   #check h5{
-    margin-left: 33%;
-    margin-top: 15%;
-   }
-   #c{
-       padding: 12px;
-       padding-left: 2px;
-       color: white;
-       list-style: none;
+        width: 110%;
+        height: 80%;
+        margin-top: 10px;
 
-   }
-   #rightbox1 img{
-       width: 140%;
-       height: 100px;
-       float: left;
-     
-
-   }
-   #footer{
+    }
+    #footer{
            width: 100%;
-           margin-top: 1000px;
+           margin-top: 100px;
            background-color: black;
            height: 900px;
            display:block;
@@ -397,8 +255,6 @@
         }
     
     
- 
-   
     
     </style>
   </head>
@@ -438,90 +294,86 @@
   <a href="/cart"><p>Cart</p></a>
   </div>
   <div id="margin"></div>
- 
- 
- 
+ <div id="threebox">
+     <div><h2>Makeup</h2></div>
+     <a href=""><p>Face(274)</p></a>
+     <a href=""><p>Eyes(187)</p></a>
+     <a href=""><p>Lips(798)</p></a>
+     <a href=""><p>Cheek(28)</p></a>
+     <a href=""><p>Gifts&values(278))</p></a>
+     <a href=""><p>Bruches(237)</p></a>
+     <a href=""><p>Nails(45)</p></a>
+     <a href=""><p>Vegan(58)</p></a>
+     <a href=""><p>MiniSize(89)</p></a>
+
+ </div>
+ <div id="fourbox">
+     <div id="box">
+         <p>New</p>
+     </div>
+     <div id="box">
+        <p>Best Seller</p>
+    </div>
+    <div id="box">
+        <p>Clean</p>
+    </div>
+    <div id="box">
+        <p>Vegan</p>
+    </div>
+    <div id="box">
+        <p>Min Size</p>
+    </div>
+    <div id="box">
+        <p>Lip Quiz</p>
+    </div>
    
  </div>
- <!-- <center>
+ 
+ <div id="fivebox">
+    <div id="res">
+        <p>196 Results</p>
+   
+    </div>
+    <div id="sort"><label for="sort">Sort</label>
 
-    </center> -->
-      
-<div><h2 id="basket">My Basket</h2></div>
-<div id="margin"></div>
-<div id="baskbox">
-    <h5>The Sephora Credit Card Program</h5>
-    <img src="https://www.sephora.com/contentimages/creditcard/cardicon/CreditCard.svg">
-<p>Save $13.20 on this order when you open and use either Sephora </p>
-<div type="submit" id="show" >
-   <h5>Show Details</h5>
-</div>
-<p>*Subject to credit approval. Exclusions apply.</p>
-</div> 
-
-</div>
-<div id="secbox">
-    <div>
-        <div id="sixbox">
-            <% var x=0%>
-                 <% cart.forEach(function (cart) {%>
-                     <div id="productsmobile" >
-                       <% x=x+Number(cart.price)%>
-                        <img src=<%=cart.image%>>
-                        <p><%=cart.brand%></p>
-                        <p><%=cart.price%></p>
-                    
-                     
-                    
-                     
+        <select name="cars" id="select">
+          <option value="">Relavent</option>
+          <option value="saab">Low To High</option>
+          <option value="mercedes">High To low</option>
+          <option value="audi">New</option>
+          <option value="audi">Top Rated</option>
+        </select></div>
+ </div>
+ 
+<div id="sixbox">
+   
+        <% product.forEach(function (product) {%>
+            <div id="productsmobile" >
+               <img src=<%=product.image%>>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+             <p><%=product.details%></p>
+             <p>$ <%=product.price%></p>
              
-                      </div>
-                      
-                      
-                    <% }) %>
-                  
-                 </div>
-                  
-    </div>
-</div>
-<div id="rightbox">
-    <div id="rightbox1">
-        <p>Merchandise Subtotal</p>
-        <p>Shipping & Handling</p>
-        <p>Estimated Tax</p>
-        <h3>Estimated Total</h3>
+             <form action="/cart" method="post">
+                <input type="hidden"  name="brand" value=<%= product.brand %>>
+                <input type="hidden" name="price" value=<%= product.price %>>
+                <input type="hidden"  name="image" value=<%=product.image%>>
+                <input type="hidden" name="rating" value=<%= product.rating %>>
+                <input type="hidden" name="details" value=<%= product.details %>>
+                <input type="hidden" name="details1" value=<%= product.details1 %>>
+                <input type="hidden" name="ingredients" value=<%= product.ingredients%>>
+                <input type="hidden" name="about" value=<%= product.about %>>
+               
+      
+                <div id="cart_id"><input  id="jbtn" type="submit" value="Add to cart" ></div>
+               </form>
+    
+             </div>
+             
+             
+           <% }) %>
+        </div>
         
-    </div>
-    <div  id="rightbox2">
-        <p>$<%=x %></p>
-        <p>FREE</p>
-        <p>EST</p>
-        <h3>$<%=x%></h3>
-    </div>
-</div>
-<div id="rightbox3">
-   <a href="/signup"><div id="check" >
-    <h5 id="c">CHECK OUT</h5>
-   </div></a>
-   <a href="https://www.paypal.com/in/signin"><div id="check" >
-    <h5 id="c">PAY PAL</h5>
-   </div></a>
-   <label>Enter promo</label>
-   <input type="text">
-   <div id="rightbox1">
-    <p>Need assistance?
-    </p>
-    <p>1-877-SEPHORA (1-877-737-4672)
-        TTY: 1-888-866-9845
-        
-        </p>
-        <p>Free return shipping or return in store
-            We accept</p>
-           
-    </div>
-    <div id="rightbox1">
-        <img src="https://www.sephora.com/contentimages/giftcards/2021/basket/2021-04-01-gift-card-suite-desktop-basket-page-targeted-banner-us.jpeg?imwidth=294">
-    </div>
 
 </div>
 <footer id="footer">
@@ -603,12 +455,6 @@
         </div>
         
   </footer>
-
-
-    </body>
-
-    
-
-
+</body>
 
 </html>

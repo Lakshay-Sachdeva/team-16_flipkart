@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            border-right-color: #b7babe;
+        }
+
+        #nav {
+            display: grid;
+            grid-template-columns: 6% 6% 88%;
+            grid-template-rows: 1fr;
+            grid-template-areas: "nav1 nav2 nav3";
+            height: 70px;
+            background-color: #2874f0;
+        }
+
+        #nav1 {
+            grid-area: nav1;
+        }
+
+        #nav2 {
+            grid-area: nav2;
+        }
+
+        #nav2 div {
+            margin: 20%;
+            height: 60px;
+            width: 160px;
+            /* border: 1px solid red; */
+        }
+
+        #nav2_1 img {
+            width: 100%;
+        }
+
+        #nav3 {
+            grid-area: nav3;
+        }
+
+        /* nav style ends here */
+
+        #body {
+            display: grid;
+            grid-template-columns: 65% 30%;
+            grid-gap: 5%;
+            grid-template-rows: 90% 10%;
+            grid-template-areas: "form side""footer footer";
+        }
+
+        #form {
+            grid-area: form;
+            text-align: center;
+            padding: 5% 5% 10%;
+        }
+
+        #side {
+            grid-area: side;
+            display: grid;
+            grid-template-columns: 10% 85%;
+            grid-template-rows: 1fr;
+            grid-template-areas: 's1 s2';
+            grid-gap: 2%;
+            margin: 12% 5% -10% 0%;
+
+        }
+
+        #s1 {
+            grid-area: s1;
+
+        }
+
+        #s1 img {
+            width: 100%;
+        }
+
+        #s2 {
+            grid-area: s2;
+        }
+
+        #footer {
+            grid-area: footer;
+            display: grid;
+            grid-template-columns: 50% 20% 30%;
+            grid-template-rows: 1fr;
+            grid-template-areas: 'f1 f2 f3';
+            color: rgb(51, 53, 53);
+        }
+        #f1{
+            text-align: center;
+            grid-area: f1;
+
+        }
+        #f2{
+            grid-area: f2;
+        }
+        #f3{
+            grid-area: f3;
+        }
+        #f3 span{
+            grid-area: f3;
+            color: rgb(37, 37, 228);
+        }
+
+        /* body code ends here */
+        #form_sub1 input {
+            width: 90%;
+            height: 40px;
+            border: none;
+            border-bottom: 0.5px solid rgb(141, 138, 138);
+        }
+
+        #submit1 {
+            background-color: #fb641b;
+            color: #ffffff;
+            border-radius: 5%;
+
+        }
+
+        #formmain {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "sub1 sub2";
+        }
+
+        #form_sub1 {
+            grid-area: sub1;
+        }
+
+        #form_sub2 {
+            grid-area: sub2;
+            display: grid;
+            grid-template-columns: 10% 90%;
+            grid-template-rows: 10% 90%;
+            grid-template-areas: 'sub2_main sub2_main''sub2_1 sub2_2';
+
+        }
+
+        #sub2_main {
+            grid-area: sub2_main;
+        }
+
+        #sub2_1 {
+            grid-area: sub2_1;
+        }
+
+        #sub2_2 {
+            grid-area: sub2_2;
+            text-align: left;
+        }
+
+        #sub2_2>div {
+
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='nav'>
+        <div id="nav1"></div>
+        <div id="nav2">
+            <div ID="nav2_1"><img
+                    src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div id="nav3"></div>
+    </div>
+
+
+    <div id="body">
+
+        <div id="form">
+            <form action="signup" method="post" id="formmain">
+                <div id="form_sub1">
+                    <!-- <label>Name</label> -->
+                    <input type="text" placeholder="Enter Name" name="name" id="name1">
+                    <br>
+                    <br>
+                    <!-- <label>Number</label> -->
+                    <input type="number" placeholder="Enter Mobile Number" name="number" id="number1">
+                    <br>
+                    <br>
+                    <!-- <label>Email</label> -->
+
+                    <input type="email" placeholder="Enter email" name="email" id="email1">
+                    <br>
+                    <br>
+                    <!-- <label>Password</label> -->
+                    <input type="password" placeholder="Enter Passwords" name="password" id="pass1">
+                    <br><br>
+                    <h4><a href="/login">Already a user? , Try Login</a></h4>
+                    <br><br>
+                    <input type="submit" placeholder="Sign Up" id="submit1">
+
+                </div>
+                <div id="form_sub2">
+                    <div id="sub2_main"><span>Advantages of our secure login</span></div>
+                    <div id="sub2_1"></div>
+                    <div id="sub2_2">
+                        <div>Easily Track Orders, Hassle free Returns</div>
+                        <div>Get Relevant Alerts and Recommendation</div>
+                        <div>Wishlist, Reviews, Ratings and more.</div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+        <div id="side">
+            <div id="s1"><img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/shield_5f9216.png"
+                    alt=""></div>
+            <div id="s2"> Safe and Secure Payments. Easy returns. 100% Authentic products.</div><br>
+            <div><i class="fa fa-truck" aria-hidden="true"></i></div>
+        </div>
+        <div id="footer">
+            <div id="f1">Policies: Returns Policy | Terms of use | Security | Privacy | Infringement</div>
+            <div id="f2"> @2007-2021</div>
+            <div id="f3">Need help? visit the <span>Help Center</span> or <span>Contact us</span> Flipkart.com</div>
+        </div>
+    </div>
+</body>
+
+</html>
